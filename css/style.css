@@ -27,6 +27,10 @@
     font-size: 14px;
     line-height: 1.42857143;
 }
+.fourth-section h1{
+    text-align: center;
+    font-size: 70px;
+}
 .col-3 img{
     padding: 5px;
     width: 100%
