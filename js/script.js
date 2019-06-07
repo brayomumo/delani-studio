@@ -12,4 +12,11 @@ $(document).ready (function(){
         $("#management p").toggle();
         $("#management img").toggle();
     })
+    function myFunction(){
+       var name = document.getElementById("name");
+       var email = document.getElementById("email");
+
+       var msg = document.querySelector()
+
+    };
 })
