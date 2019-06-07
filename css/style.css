@@ -38,3 +38,10 @@
     padding: 5px;
     width: 100%
 };
+.hidden p{
+    display: none;
+    text-align: center;
+}
+/* .hidden{
+    margin: 1%;
+} */
