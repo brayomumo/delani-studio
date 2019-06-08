@@ -12,12 +12,27 @@ $(document).ready (function(){
         $("#management p").toggle();
         $("#management img").toggle();
     })
-    function myFunction(){
-       var name = document.getElementById("name");
-       var email = document.getElementById("email");
-
-    //    var msg = document.querySelector()
+    $("div.input-error").hide();
+    $("div.input-success").hide();
+   
+        $("div.input-error").hide();
+        $("div.input-success").hide();
+        $("#submit").click(function(){
+            $(".input-success").toogle();
+        })
+    // $("btn submit").click(function(){
+    //     $(".input-success").toogle();
+    // })
     
+    //  $("#submit").click(function(){
+    //     // // if($("name").val().length>0){
+    //     //     $("div.input-success").show();
+    //     //     $("div.input-success").hide();
+    //     // //  }else {
+    //     //     // $("div.input-error").show();
+    //     //     // $("div.input-error").hide();
+    //     // // }
 
-    };
+    //  })
+    
 })
