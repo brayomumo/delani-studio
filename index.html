@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <title>Delani studio</title>
 </head>
@@ -114,12 +115,20 @@
                         <textarea class="form-control transparent-input" rows="5" placeholder="Message"></textarea>
                     </div>
                     <br> <br>
-                    <div class="hidden">
-                            <p  id="result">Message submitted successfully<br> Thank you</p>
+                    <div class="alert alert-danger input-error">
+                        <button type="button" class="close " data-dismiss="alert" aria-hidden="true">×</button>
+                        <strong>Sorry!</strong> Must include email for successful  submission
                     </div>
+                    <div class="alert alert-success input-success">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <strong>Thank you!</strong> Message submitted successfully.
+                    </div>
+                    <!-- <div class="hidden">
+                            <p  id="result">Message submitted successfully<br> Thank you</p>
+                    </div> -->
                     
                          
-                    <button class="btn btn-success btn-lg">Submit</button>
+                    <button id="submit" class="btn btn-success btn-lg" >Submit</button>
                     
                     <!-- <div class="panel-footer">
                    </div> -->
