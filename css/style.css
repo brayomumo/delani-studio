@@ -59,5 +59,8 @@
     border-color: beige;
  }
  .align{
+     float: center;
+ }
+ #result{
      text-align: center;
  }
