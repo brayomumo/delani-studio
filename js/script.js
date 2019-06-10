@@ -1,38 +1,44 @@
-$(document).ready (function(){
+$(document).ready(function () {
     $(".hidden p").hide();
-     $("#design").click(function(){
-         $("#design p").toggle();
-         $("#design img").toggle();
-     })
-     $("#development").click(function(){
+    $("#design").click(function () {
+        $("#design p").toggle();
+        $("#design img").toggle();
+    })
+    $("#development").click(function () {
         $("#development p").toggle();
         $("#development img").toggle();
     })
-    $("#management").click(function(){
+    $("#management").click(function () {
         $("#management p").toggle();
         $("#management img").toggle();
-    })
-    $("div.input-error").hide();
-    $("div.input-success").hide();
-   
-        $("div.input-error").hide();
-        $("div.input-success").hide();
-        $("#submit").click(function(){
-            $(".input-success").toogle();
-        })
-    // $("btn submit").click(function(){
-    //     $(".input-success").toogle();
-    // })
-    
-    //  $("#submit").click(function(){
-    //     // // if($("name").val().length>0){
-    //     //     $("div.input-success").show();
-    //     //     $("div.input-success").hide();
-    //     // //  }else {
-    //     //     // $("div.input-error").show();
-    //     //     // $("div.input-error").hide();
-    //     // // }
 
-    //  })
-    
+    })
+    $("#contact").submit(function (e) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        if (name == "" || email == "") {
+            alert("Cannot submit without name and email");
+        } else {
+            alert("thank you " + name + " \n message submitted successfully")
+        }
+    });
+
+    // $(document).ready(function() {
+    $('#text1').hide();
+    $('#work1').animate({
+        opacity: 1
+
+    });
+
+    $('#work1').hover(function () {
+        $(this).stop().animate({ opacity: 4 }, 200);
+        $('#text1').fadeIn();
+
+    }, function () {
+        $(this).stop().animate({ opacity: 1 }, 500)
+        $('#text1').fadeOut();
+    });
+
+
+    // });
 })

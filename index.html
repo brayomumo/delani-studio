@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
@@ -65,77 +67,68 @@
             </div>
             <h1>PORTFOLIO</h1>
             <div class="row">
-                <div class="col-3 " id="work1">
-                    <img src="portfolio/work1.jpg" hspace="20" >
+                <div class="col-3 " >
+                    <img src="portfolio/work1.jpg" hspace="20" title="project 1" id="work1">
+                    <div id="text1">work 1</div>
                 </div>
                 <div class="col-3" id="work2">
-                    <img src="portfolio/work2.jpg" hspace="20" >
+                    <img src="portfolio/work2.jpg" hspace="20" title="project2" id="work2" >
+                   
                 </div>
                 <div class="col-3" id="work3">
-                    <img src="portfolio/work3.jpg" hspace="20" >
+                    <img src="portfolio/work3.jpg" hspace="20" title="project 3" id="work3" >
+                    
                 </div>
                 <div class="col-3" id="work4">
-                    <img src="portfolio/work4.jpg" hspace="20" >
+                    <img src="portfolio/work4.jpg" hspace="20" title="project 4"id="work4" >
+                    
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-3" id="work5">
-                    <img src="portfolio/work5.jpg" hspace="20" >
+                    <img src="portfolio/work5.jpg" hspace="20" title="project 5" >
+                    
                 </div>
                 <div class="col-3" id="work6">
-                    <img src="portfolio/work6.jpg" hspace="20" >
+                    <img src="portfolio/work6.jpg" hspace="20" title="project 6" >
+                    
                 </div>
                 <div class="col-3" id="work7">
-                    <img src="portfolio/work7.jpg" hspace="20" >
+                    <img src="portfolio/work7.jpg" hspace="20" title="project 7" >
+                    
                 </div>
                 <div class="col-3" id="work8">
-                    <img src="portfolio/work8.jpg" hspace="20" >
+                    <img src="portfolio/work8.jpg" hspace="20" title="project 8" >
+                
                 </div>
             </div>
         </div>
-            <br>
-            <br>
-            <div class="fifth-section">
+        <br>
+        <br>
+        <div class="fifth-section">
                 <br>
                 <br>
                 <br>
-                <form>
+                <form id="contact">
                     <div class="panel-body">
                         <div class="row row-pad-5">
                             <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Name" class="form-control  transparent-input">
+                                <input type="text" id="name" placeholder="Name" class="form-control  transparent-input">
                             </div>
                             <br>
                             <div class="col-md-6">
-                                <input type="email" name="email" placeholder="Email" class="form-control transparent-input">
+                                <input type="email" id="email" placeholder="Email" class="form-control transparent-input">
                             </div>
                             <br> <br>
                         </div>
                         <textarea class="form-control transparent-input" rows="5" placeholder="Message"></textarea>
-                    </div>
-                    <br> <br>
-                    <div class="alert alert-danger input-error">
-                        <button type="button" class="close " data-dismiss="alert" aria-hidden="true">×</button>
-                        <strong>Sorry!</strong> Must include email for successful  submission
-                    </div>
-                    <div class="alert alert-success input-success">
-                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                        <strong>Thank you!</strong> Message submitted successfully.
-                    </div>
-                    <!-- <div class="hidden">
-                            <p  id="result">Message submitted successfully<br> Thank you</p>
-                    </div> -->
-                    
-                         
-                    <button id="submit" class="btn btn-success btn-lg" >Submit</button>
-                    
-                    <!-- <div class="panel-footer">
-                   </div> -->
-        
+                    <br>
+                    <input type="submit" class="btn bt-info" value="submit">
+                </div>     
                     </form>
 
-            </div>
+        </div>
             
     </div>
 </body>
