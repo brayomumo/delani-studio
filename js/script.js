@@ -22,23 +22,27 @@ $(document).ready(function () {
             alert("thank you " + name + " \n message submitted successfully")
         }
     });
+    $(".padd").hover(function() {
+        $(this).children(".card-1").fadeToggle(1000, "linear");
+        
+       });
 
-    // $(document).ready(function() {
-    $('#text1').hide();
-    $('#work1').animate({
-        opacity: 1
-
-    });
-
-    $('#work1').hover(function () {
-        $(this).stop().animate({ opacity: 4 }, 200);
-        $('#text1').fadeIn();
-
-    }, function () {
-        $(this).stop().animate({ opacity: 1 }, 500)
-        $('#text1').fadeOut();
-    });
-
+    // // $(document).ready(function() {
+    // $('#text1').hide();
+    // $('#work1').animate({
+    //     opacity: 1
 
     // });
+
+    // $('#work1').hover(function () {
+    //     $(this).stop().animate({ opacity: 4 }, 200);
+    //     $('#text1').fadeIn();
+
+    // }, function () {
+    //     $(this).stop().animate({ opacity: 1 }, 500)
+    //     $('#text1').fadeOut();
+    // });
+
+
+    // // });
 })
